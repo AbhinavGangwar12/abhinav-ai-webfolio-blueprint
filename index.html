@@ -1,26 +1,327 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>abhinav-ai-webfolio-blueprint</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Gangwar | AI/ML Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">AG</a>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="abhinav-ai-webfolio-blueprint" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Abhinav Gangwar</span></h1>
+                    <h2>Aspiring AI/ML Developer</h2>
+                    <p>Building intelligent systems to solve real-world problems.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-placeholder">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a Computer Science student at Lovely Professional University, expected to graduate in 2026. My academic journey has ignited a deep passion for Machine Learning and Artificial Intelligence.</p>
+                        <p>I enjoy solving complex problems through the power of data and algorithms. My focus lies in developing intelligent systems that can make meaningful contributions to society.</p>
+                        <p>Beyond AI/ML, I'm also enthusiastic about full-stack development, which allows me to create complete, user-friendly applications that leverage the power of intelligent systems.</p>
+                        <div class="edu-info">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <div class="education">
+                                <h4>B.Tech in Computer Science</h4>
+                                <p>Lovely Professional University</p>
+                                <p>2022 - 2026 (Expected)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Image Classification with CNNs</h3>
+                            <p>Developed a convolutional neural network model to classify images with high accuracy, focusing on real-time object detection.</p>
+                            <div class="tech-stack">
+                                <span>TensorFlow</span>
+                                <span>Keras</span>
+                                <span>OpenCV</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Sentiment Analysis</h3>
+                            <p>Created a model to analyze sentiment in text data, enabling emotion-based categorization of customer feedback and social media content.</p>
+                            <div class="tech-stack">
+                                <span>NLTK</span>
+                                <span>scikit-learn</span>
+                                <span>Python</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>ML Algorithms from Scratch</h3>
+                            <p>Implemented fundamental machine learning algorithms from scratch to gain deeper understanding of core ML concepts and mathematics.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>Math</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Recommendation System</h3>
+                            <p>Built a personalized recommendation engine using collaborative filtering and content-based approaches for suggesting products to users.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>scikit-learn</span>
+                                <span>Matrix Factorization</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C++</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Tools & Libraries</h3>
+                        <div class="skills-grid">
+                            <div class="skill-tag">TensorFlow</div>
+                            <div class="skill-tag">scikit-learn</div>
+                            <div class="skill-tag">Pandas</div>
+                            <div class="skill-tag">NumPy</div>
+                            <div class="skill-tag">Docker</div>
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-tag">Keras</div>
+                            <div class="skill-tag">PyTorch</div>
+                            <div class="skill-tag">Matplotlib</div>
+                            <div class="skill-tag">Jupyter</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Concepts</h3>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Natural Language Processing</div>
+                            <div class="skill-tag">Deep Learning</div>
+                            <div class="skill-tag">Data Structures</div>
+                            <div class="skill-tag">Algorithms</div>
+                            <div class="skill-tag">Computer Vision</div>
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Neural Networks</div>
+                            <div class="skill-tag">Big Data</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <h2 class="section-title">Certifications & Activities</h2>
+                <div class="cert-activities-container">
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>Generative AI</h4>
+                                    <p>DeepLearning.AI</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h4>Dynamic Programming</h4>
+                                    <p>Udemy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activities">
+                        <h3>Extracurricular Activities</h3>
+                        <div class="activities-list">
+                            <div class="activity-item">
+                                <i class="fas fa-trophy"></i>
+                                <div>
+                                    <h4>State-Level Cricket</h4>
+                                    <p>Represented state in regional tournaments</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <i class="fas fa-flask"></i>
+                                <div>
+                                    <h4>ML Research Participation</h4>
+                                    <p>Contributed to university research project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:abhinav1203gangwar@gmail.com">abhinav1203gangwar@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+918077952469">+91 8077952469</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Punjab, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Abhinav Gangwar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
