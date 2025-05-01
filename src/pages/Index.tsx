@@ -6,7 +6,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { Line, Pie } from "recharts";
+import { Line, Pie, ResponsiveContainer, PieChart, LineChart, Tooltip } from "recharts";
 
 const Index = () => {
   const [codingStats, setCodingStats] = useState<any>(null);
@@ -144,19 +144,21 @@ const Index = () => {
                         Other: { color: "#aaaaaa" },
                       }}
                     >
-                      <Pie 
-                        data={codingStats.languages}
-                        dataKey="percentage"
-                        nameKey="name"
-                        cx="50%"
-                        cy="50%"
-                        outerRadius={80}
-                        fill="#8884d8"
-                        label
-                      />
-                      <ChartTooltip>
-                        <ChartTooltipContent />
-                      </ChartTooltip>
+                      <ResponsiveContainer width="100%" height="100%">
+                        <PieChart>
+                          <Pie 
+                            data={codingStats.languages}
+                            dataKey="percentage"
+                            nameKey="name"
+                            cx="50%"
+                            cy="50%"
+                            outerRadius={80}
+                            fill="#8884d8"
+                            label
+                          />
+                          <Tooltip content={<ChartTooltipContent />} />
+                        </PieChart>
+                      </ResponsiveContainer>
                     </ChartContainer>
                   )}
                 </div>
@@ -212,16 +214,18 @@ const Index = () => {
                         contributions: { color: "#33C3F0" },
                       }}
                     >
-                      <Line 
-                        data={codingStats.contributionTimeline} 
-                        dataKey="contributions"
-                        stroke="#33C3F0"
-                        strokeWidth={2}
-                        dot={{ fill: "#33C3F0" }}
-                      />
-                      <ChartTooltip>
-                        <ChartTooltipContent />
-                      </ChartTooltip>
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={codingStats.contributionTimeline}>
+                          <Line 
+                            type="monotone"
+                            dataKey="contributions"
+                            stroke="#33C3F0"
+                            strokeWidth={2}
+                            dot={{ fill: "#33C3F0" }}
+                          />
+                          <Tooltip content={<ChartTooltipContent />} />
+                        </LineChart>
+                      </ResponsiveContainer>
                     </ChartContainer>
                   )}
                 </div>

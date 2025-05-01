@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     try {
         // Simulate fetching data from Codolio
-        // Note: Since we can't directly access the Codolio API, we'll create mock data based on your profile
+        // Note: Since we can't directly access the Codolio API, we'll create mock data based on the profile
         // In a real scenario, you would make an API call to fetch this data
         
         const codingStats = await fetchCodingStats();
@@ -64,11 +64,11 @@ function renderLanguagesChart(languages) {
             datasets: [{
                 data: languages.map(lang => lang.percentage),
                 backgroundColor: [
-                    '#33C3F0', // Teal (primary)
-                    '#3B3B6D', // Navy
-                    '#6E88FF', // Light Blue
-                    '#F1F0FB', // Light Navy
-                    '#B5B5E3'  // Muted Purple
+                    '#3572A5', // Python (blue)
+                    '#F7DF1E', // JavaScript (yellow)
+                    '#00599C', // C++ (dark blue)
+                    '#B07219', // Java (brown)
+                    '#aaaaaa'  // Other (gray)
                 ],
                 borderColor: 'white',
                 borderWidth: 2
@@ -117,11 +117,11 @@ function renderContributionTimeline(timelineData) {
                 label: 'Contributions',
                 data: timelineData.data,
                 fill: true,
-                backgroundColor: 'rgba(51, 195, 240, 0.2)',
-                borderColor: '#33C3F0',
+                backgroundColor: 'rgba(53, 114, 165, 0.2)',
+                borderColor: '#3572A5',
                 borderWidth: 2,
                 tension: 0.4,
-                pointBackgroundColor: '#33C3F0',
+                pointBackgroundColor: '#3572A5',
                 pointRadius: 4
             }]
         },
