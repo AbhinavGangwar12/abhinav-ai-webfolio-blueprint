@@ -1,4 +1,3 @@
-
 /* Base Styles */
 :root {
     --light-bg: #FFFFFF;
@@ -495,6 +494,117 @@ header.scrolled {
     background-color: var(--teal);
     color: var(--white);
     transform: translateY(-5px);
+}
+
+/* Coding Stats Section */
+.coding-stats-section {
+    background-color: var(--white);
+    padding: 6rem 0;
+}
+
+.stats-container {
+    position: relative;
+}
+
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(51, 195, 240, 0.2);
+    border-radius: 50%;
+    border-top-color: var(--teal);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    display: none;
+}
+
+.stats-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
+}
+
+.stats-card h3 {
+    margin-bottom: 1.5rem;
+    color: var(--navy);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.stats-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--teal);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.languages-chart {
+    height: 250px;
+}
+
+.contribution-timeline {
+    height: 200px;
+}
+
+.activity-overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--lightest-navy);
+    transition: var(--transition);
+}
+
+.stat-item:hover {
+    background-color: var(--light-teal);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    font-family: var(--font-mono);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--slate);
+    font-size: 0.9rem;
 }
 
 /* Certifications & Activities */
