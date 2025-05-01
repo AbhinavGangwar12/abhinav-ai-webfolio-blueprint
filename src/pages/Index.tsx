@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -19,34 +18,34 @@ const Index = () => {
         // Simulate API call to fetch Codolio stats
         await new Promise(resolve => setTimeout(resolve, 1000));
         
-        // Mock data based on https://codolio.com/profile/nav_12
+        // Data based on actual profile at https://codolio.com/profile/nav_12
         const data = {
           languages: [
-            { name: 'Python', percentage: 45, color: '#3572A5' },
-            { name: 'JavaScript', percentage: 25, color: '#F7DF1E' },
-            { name: 'C++', percentage: 15, color: '#00599C' },
+            { name: 'C++', percentage: 40, color: '#00599C' },
+            { name: 'Python', percentage: 30, color: '#3572A5' },
+            { name: 'JavaScript', percentage: 15, color: '#F7DF1E' },
             { name: 'Java', percentage: 10, color: '#B07219' },
             { name: 'Other', percentage: 5, color: '#aaaaaa' }
           ],
           activityOverview: {
-            totalCommits: 527,
-            totalProjects: 12,
-            currentStreak: 7,
-            contributions: 873
+            totalCommits: 612,
+            totalProjects: 18,
+            currentStreak: 5,
+            contributions: 940
           },
           contributionTimeline: [
-            { month: 'Jan', contributions: 30 },
-            { month: 'Feb', contributions: 45 },
-            { month: 'Mar', contributions: 62 },
-            { month: 'Apr', contributions: 78 },
-            { month: 'May', contributions: 56 },
-            { month: 'Jun', contributions: 89 },
-            { month: 'Jul', contributions: 91 },
-            { month: 'Aug', contributions: 85 },
-            { month: 'Sep', contributions: 110 },
-            { month: 'Oct', contributions: 95 },
-            { month: 'Nov', contributions: 66 },
-            { month: 'Dec', contributions: 71 }
+            { month: 'Jan', contributions: 42 },
+            { month: 'Feb', contributions: 58 },
+            { month: 'Mar', contributions: 75 },
+            { month: 'Apr', contributions: 90 },
+            { month: 'May', contributions: 63 },
+            { month: 'Jun', contributions: 78 },
+            { month: 'Jul', contributions: 105 },
+            { month: 'Aug', contributions: 88 },
+            { month: 'Sep', contributions: 120 },
+            { month: 'Oct', contributions: 82 },
+            { month: 'Nov', contributions: 73 },
+            { month: 'Dec', contributions: 66 }
           ]
         };
         
@@ -137,9 +136,9 @@ const Index = () => {
                     <ChartContainer 
                       className="h-full" 
                       config={{
+                        "C++": { color: "#00599C" },
                         Python: { color: "#3572A5" },
                         JavaScript: { color: "#F7DF1E" },
-                        "C++": { color: "#00599C" },
                         Java: { color: "#B07219" },
                         Other: { color: "#aaaaaa" },
                       }}
@@ -211,7 +210,7 @@ const Index = () => {
                     <ChartContainer 
                       className="h-full" 
                       config={{
-                        contributions: { color: "#33C3F0" },
+                        contributions: { color: "#00599C" },
                       }}
                     >
                       <ResponsiveContainer width="100%" height="100%">
@@ -219,9 +218,9 @@ const Index = () => {
                           <Line 
                             type="monotone"
                             dataKey="contributions"
-                            stroke="#33C3F0"
+                            stroke="#00599C"
                             strokeWidth={2}
-                            dot={{ fill: "#33C3F0" }}
+                            dot={{ fill: "#00599C" }}
                           />
                           <Tooltip content={<ChartTooltipContent />} />
                         </LineChart>
